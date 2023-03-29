@@ -27,4 +27,6 @@ export class AppComponent implements OnInit {
             this.pokemonSelected = pokemon;
         }
     }
+
+    protected readonly POKEMONS = POKEMONS;
 }
