@@ -3,17 +3,19 @@
 
     <div class="row">
         <div class="col m4" *ngFor="let pokemon of pokemonList">
-            <div class="card horizontal">
+            <div class="card horizontal" pkmnBorderColor="red">
                 <div class="card-image">
-                    <img clas="image-responsive"[src]="pokemon.picture" />
+                    <img class="image-responsive" [src]="pokemon.picture"/>
                 </div>
 
-                <div class="card-stacked" >
+                <div class="card-stacked">
                     <p>
-                        <strong>Identifiant : {{pokemon.id}}</strong><br>
-                        <small>Nom : {{pokemon.name}}<br>
-                        Créé le : {{pokemon.created | date: 'dd/MM/yyyy'}}<br>
-                            Type : {{pokemon.types}}</small>
+                        <strong>Numéro : {{pokemon.id}}</strong><br>
+                        <small>
+                            Nom : {{pokemon.name}}<br>
+                            Créé le : {{pokemon.created | date: 'dd/MM/yyyy'}}<br>
+                            Type : {{pokemon.types}}
+                        </small>
                     </p>
                 </div>
             </div>

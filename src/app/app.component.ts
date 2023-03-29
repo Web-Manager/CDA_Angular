@@ -13,7 +13,7 @@ export class AppComponent implements OnInit {
     pokemonList = POKEMONS;
 
     ngOnInit() {
-        console.table(this.pokemonList);
+        //console.table(this.pokemonList);
     }
 
     selectPokemon(pokemonId: String) {
