@@ -1,22 +1,24 @@
 import {Component, OnInit} from '@angular/core';
-import {POKEMONS} from './mock-pokemon-list';
-import {Pokemon} from './pokemon';
+/*import {POKEMONS} from './mock-pokemon-list';
+import {Pokemon} from './pokemon';*/
 
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html'
 })
 
-export class AppComponent implements OnInit {
-    title = `Liste des Pokémons`;
+export class AppComponent {
+
+/*
     pokemonSelected: Pokemon|undefined;
     pokemonList = POKEMONS;
+*/
 
-    ngOnInit() {
+/*    ngOnInit() {
         //console.table(this.pokemonList);
-    }
+}*/
 
-    selectPokemon(pokemonId: String) {
+/*    selectPokemon(pokemonId: String) {
         const pokemon: Pokemon | undefined = this.pokemonList.find(pokemon => +pokemon.id == +pokemonId);
 
         if (pokemon) {
@@ -26,7 +28,7 @@ export class AppComponent implements OnInit {
             console.log(`Vous avez choisi un numéro de pokémon inexistant`);
             this.pokemonSelected = pokemon;
         }
-    }
+    }*/
 
-    protected readonly POKEMONS = POKEMONS;
+/*    protected readonly POKEMONS = POKEMONS;*/
 }

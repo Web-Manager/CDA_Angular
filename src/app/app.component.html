@@ -1,27 +1,12 @@
-<div class="container">
-    <h1 class="center">{{ title }}</h1>
-
-    <div class="row">
-        <div class="col m4" *ngFor="let pokemon of pokemonList">
-            <div class="card horizontal" pkmnBorderCard>
-                <div class="card-image">
-                    <img class="image-responsive" [src]="pokemon.picture"/>
-                </div>
-
-                <div class="card-stacked">
-                    <p>
-                        <strong>Numéro : {{pokemon.id}}</strong><br>
-                        <small>
-                            Nom : {{pokemon.name}}<br>
-                            Créé le : {{pokemon.created | date: 'dd/mm/yyyy'}}<br>
-                            Type :<br>
-                            <span *ngFor="let type of pokemon.types" class="{{type | pokemonTypeColor}}">{{type}}</span>
-                        </small>
-                    </p>
-                </div>
-            </div>
+<header>
+    <nav>
+        <div class="new-wrapper teal">
+            <a href="/">Accueil</a>
         </div>
-    </div>
+    </nav>
+</header>
+<div class="container">
+    <router-outlet></router-outlet>
 </div>
 
 <!--
